@@ -1,33 +1,114 @@
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .head {
-  padding-top: 20px; }
-  .head .warp {
-    margin: 0 auto;
-    width: 990px;
-    height: 73px; }
-    .head .warp .logo {
-      float: left;
-      height: 63px;
-      padding-top: 10px;
-      background: url(../img/newlogo.png) no-repeat 0 10px;
-      width: 427px; }
+  padding-top: 20px;
+}
+
+.head .warp {
+  margin: 0 auto;
+  width: 990px;
+  height: 73px;
+}
+
+.head .warp .logo {
+  float: left;
+  height: 63px;
+  padding-top: 10px;
+  background: url(../img/newlogo.png) no-repeat 0 10px;
+  width: 427px;
+}
 
 .AllWrapInside {
   margin: 0 auto;
   width: 780px;
   line-height: 30px;
   text-align: right;
-  padding-right: 10px; }
-  .AllWrapInside .c999 a {
-    color: #999;
-    font-size: 14px; }
+  padding-right: 10px;
+}
+
+.AllWrapInside .c999 a {
+  color: #999;
+  font-size: 14px;
+}
+
+.signupform .RegisterWrap {
+  margin: 0 auto;
+  width: 780px;
+}
+
+.signupform .RegisterWrap .form {
+  padding: 0;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #E5E5E5;
+}
+
+.signupform .RegisterWrap .form h3 {
+  font-size: 16px;
+  color: #888;
+  background: #f8f8f8;
+  padding: 4px 10px;
+  border-bottom: 1px solid #efefef;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+}
+
+.signupform .RegisterWrap .form .table_b {
+  width: "100%";
+  background: url("../img/signup.jpg") no-repeat center bottom;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_one {
+  width: "65%";
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_one > div {
+  padding: 40px 0 80px 80px;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_two {
+  width: "23%";
+  text-align: center;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_two > div {
+  height: 300px;
+  border-left: 1px dashed #ccc;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_two > div b {
+  display: block;
+  padding-top: 50px;
+  font-size: 12px;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_two > div .returnlogin {
+  display: inline-block;
+  margin-top: 10px;
+  width: 91px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  color: #c66;
+  font-size: 14px;
+  font-weight: 700;
+  background: url("../img/loginbg.png") no-repeat;
+}
+
+.signupform .RegisterWrap .form .table_b tbody tr .td_two > div img {
+  padding-top: 40px;
+  text-align: center;
+}
 
 .c777 label {
-  font-size: 14px; }
-  .c777 label a {
-    text-decoration: underline; }
+  font-size: 14px;
+}
+
+.c777 label a {
+  text-decoration: underline;
+}
 
 .actbtn {
   width: 89px;
@@ -37,38 +118,27 @@ a {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  background: url("../img/scn04.png") no-repeat 0 -198px; }
-
-b {
-  display: block;
-  padding-top: 60px;
-  font-size: 12px; }
-
-.box10 {
-  height: 10px;
-  clear: both;
-  overflow: hidden; }
-
-.returnlogin {
-  display: inline-block;
-  width: 91px;
-  height: 32px;
-  line-height: 30px;
-  text-align: center;
-  color: #c66;
-  font-size: 14px;
-  font-weight: 700;
-  background: url("../img/loginbg.png") no-repeat; }
+  background: url("../img/scn04.png") no-repeat 0 -198px;
+}
 
 .foot {
   margin: 30px auto 0;
   width: 990px;
   border-top: 2px solid #CE3C3B;
-  background: none; }
-  .foot .row02 {
-    text-align: center;
-    padding: 20px 0; }
-    .foot .row02 i {
-      font-size: 20px;
-      color: #c00;
-      font-weight: 700; }
+  background: none;
+}
+
+.foot .row02 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.foot .row02 span a {
+  font-size: 14px;
+}
+
+.foot .row02 i {
+  font-size: 20px;
+  color: #c00;
+  font-weight: 700;
+}

@@ -18,7 +18,7 @@ a{
 }
 
 .AllWrapInside{
-    width: 80%;margin: 0 auto;
+    width: 980px;margin: 0 auto;
     .loinform{
         .RegisterWrap{
             margin:0;
@@ -30,7 +30,11 @@ a{
 }
 
 .login_box{
-    width:85%;background: #fafafa;border:1px solid #eee;box-shadow:3px 3px #f5f5f5;
+    width:85%;
+    background: #fafafa;
+    border:1px solid #eee;
+    box-shadow:3px 3px #f5f5f5;
+    margin-top:35px;
     table{
         margin:0 auto;
         tbody{
@@ -58,7 +62,7 @@ a{
     }
 }
 th{
-    text-align: right;
+    text-align:right;
     color:#666;
     width: 60px;
     font-size: 14px;vertical-align: middle;font-weight: 100;
@@ -69,20 +73,28 @@ th{
     border:none;cursor:pointer;
 }
 .c777{
-    font-size: 14px;color:#777;
+    font-size: 14px;
+    color:#777;
 }
 #fast_login_reg{
     color:#f60;
     text-decoration:underline;
 }
 .login-IconList{
-    float: left;padding-top: 5px;width: 115px;
-    height: 20px;overflow:visible;
+    float:left;
+    padding-top: 5px;
+    width: 115px;
+    height: 20px;
+    overflow:visible;
 }
-
+.login-descript{
+    padding-top:12px;
+}
 .foot{
     margin:30px auto 0;
-    width:990px;
+    width:980px;
+    border-top:2px solid #CE3C3B;
+    // background:none;
     .row02{
         text-align: center;
         padding: 20px 0;

@@ -29,7 +29,73 @@ a{
         }
     }
 }
+.signupform{
 
+    .RegisterWrap{
+         margin:0 auto;
+         width:780px;
+        .form{
+             padding:0;
+             border:1px solid #efefef;
+             border-radius:2px;
+             box-shadow:0 0 8px #E5E5E5 ;
+             h3{
+                font-size:16px;
+                color:#888;
+                background:#f8f8f8;
+                padding:4px 10px;
+                border-bottom:1px solid #efefef;
+                text-shadow:1px 1px #fff;
+                font-weight:700;
+             }
+             .table_b{
+                width:"100%";
+                background: url('../img/signup.jpg') no-repeat center bottom;
+                tbody{
+                    tr{
+                        .td_one{
+                            width:"65%"; 
+                            // background-color:#000;
+                            >div{
+                                padding:40px 0 80px 80px;
+                            }
+                        }
+                        .td_two{
+                            width:"23%"; 
+                            text-align:center;
+                            >div{
+                                height:300px;
+                                border-left:1px dashed #ccc;
+                                b{
+                                    display:block;
+                                    padding-top:50px;
+                                    font-size: 12px;
+                                }
+                                .returnlogin{
+                                    display: inline-block;
+                                    margin-top:10px;
+                                    width: 91px;
+                                    height: 32px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    color:#c66;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    background: url("../img/loginbg.png")no-repeat;
+                                }
+                                img{
+                                    padding-top:40px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+             }
+              
+        }
+    } 
+}
 .c777{
     label{
         font-size: 14px;
@@ -49,25 +115,8 @@ a{
     border:none;
     background: url('../img/scn04.png') no-repeat 0 -198px;
 }
-b{
-    display:block;
-    padding-top:60px;
-    font-size: 12px;
-}
-.box10{
-    height: 10px;clear:both;overflow: hidden;
-}
-.returnlogin{
-    display: inline-block;
-    width: 91px;
-    height: 32px;
-    line-height: 30px;
-    text-align: center;
-    color:#c66;
-    font-size: 14px;
-    font-weight: 700;
-    background: url("../img/loginbg.png")no-repeat;
-}
+
+
 .foot{
     margin:30px auto 0;
     width:990px;

@@ -1,0 +1,162 @@
+#scn_pro{
+    width: 990px;
+    margin: 0 auto;
+    .Navigation{
+        padding: 8px 0;
+        color:#999;
+        span{
+            margin: 0 5px 0 0;
+        }
+    }
+    .goods-viewer{
+        width:100%;
+        height:500px;
+        background-color:red;
+        .goods_left{
+            float:left;
+            width:432px;
+            height:432px;
+            background-color:skyblue;
+        }
+        .goods_right{
+            float:right;
+            width:543px;
+            height:475px;
+            background-color:#fff;
+            .goodnamewarp{
+                height:32px;
+                line-height:32px;
+                margin-bottom: -4px;
+                .morebrand{
+                    font-size: 12px;
+                    font-weight: normal;
+                    float: right;
+                    display: block;
+                    color: #999;
+                    a{
+                        color: #F60;
+                        background: 0;
+                        border: 0;
+                    }
+                }
+                .goodsname{
+                    margin: 0;
+                    font-size: 14px;
+                    width: 435px;
+                    color: #111;
+                }
+                .sp {
+                    margin: 5px 0;
+                    height: 1px;
+                    overflow: hidden;
+                    clear: both;
+                    background: url(../img/pro_detial_icon1.png) repeat-x;
+                }
+            }
+            ul.list {
+                margin: 8px 5px 10px;
+                display: block;
+                li{
+                    color: #666;
+                    display: block;
+                    line-height: 25px;
+                    span {
+                        vertical-align: middle;
+                    }
+                    .salePrice_big {
+                        color: #d00;
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: verdana;
+                    }
+                    .comCountBar, .comCountBar i {
+                        display: inline-block;
+                        width: 60px;
+                        height: 11px;
+                        overflow: hidden;
+                        background: url(//images.s.cn/themes/scn2012/images/skin/pro_detial_icon1.png) no-repeat -99px -190px;
+                    }
+                    .comCount {
+                        color: #2d499d;
+                    }
+                }
+            }
+            .push_sale {
+                padding: 10px 0 5px;
+                font-family: '宋体';
+                clear: both;
+                color: #999;
+                background: url(../img/pro_detial_icon1.png) repeat-x 0 -65px;
+                height: 20px;
+                line-height: 20px;
+                .sbg {
+                    background: #ffe9e9;
+                    height: 20px;
+                    .t{
+                        height: 20px;
+                        padding: 0 5px;
+                        text-align: center;
+                        border-right: 2px solid #fff;
+                        float: left;
+                        color: #fff;
+                        background: #ff9090;
+                    }
+                    .scon {
+                        padding: 0 5px;
+                        height: 20px;
+                        color: #fe6464;
+                        float: left;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .btnBar {
+                height: 58px;
+                position: relative;
+                #goods_ck_info {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 240px;
+                    overflow: hidden;
+                    color: #666;
+                }
+                .buynums, .btnBar .buyCm {
+                    padding: 0 3px;
+                    color: #C00;
+                    font-weight: 700;
+                    font-family: '宋体';
+                }
+                .btnsBox {
+                    width: 171px;
+                    height: 46px;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 110px;
+                    text-align: right;
+                    vertical-align: bottom;
+                    .btn-buy {
+                        width: 171px;
+                        height: 44px;
+                        background: url(../img/pro_detial_icon1.png) no-repeat -1px -124px;
+                        float: right;
+                    }
+                    .btn-fastbuy {
+                        float: left;
+                        width: 137px;
+                        height: 44px;
+                        background: url(../img/pro_detial_icon1.png) no-repeat -1px -447px;
+                    }
+                }
+                .scn_baozheng {
+                    clear: both;
+                    background: url(../pro_detial_icon1.png) repeat-x 0 -65px;
+                    padding: 10px 0;
+                    font-family: '宋体';
+                    color: #777;
+                }
+            }
+        }
+
+    }
+}

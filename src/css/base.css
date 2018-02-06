@@ -32,7 +32,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*公共类*/
 .container {  /*版心 提取 */
-    width: 990px;margin:0 auto;
+    width: 1190px;margin:0 auto;
 }
 .fl {
     float:left;
@@ -58,7 +58,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*公共部分*/
 .shoes{
-    min-width:990px;
+    min-width:1190px;
     _width:expression(document.body.clientWidth < 1190 ? "1190px" : "auto");
 }
 /*头部导航开始*/

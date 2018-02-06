@@ -1,0 +1,85 @@
+#footer{
+    height:385px;
+    padding-bottom:1px;
+    border-top:2px solid #ce3c3b;;
+    background-color:#f8f8f8;
+    .row{
+        padding:15px;
+        height: 266px;
+        background: #F5F5F5;
+        border-bottom:1px solid #e8e8e8;height: 195px;
+        .warp{
+            width: 80%;
+            margin:0 auto;
+            .ewm{
+                height: 195px;
+                width: 22.4%;
+                border-right: 1px solid #dedede;
+                float: left;
+                position: relative;
+            }
+            .ftli{
+                float: left;
+                height: 195px;
+                width: 73%;
+                padding-left: 40px;
+                line-height: 1.6em;
+                li{
+                    width: 26%;height: 195px;float:left;
+                    h6{
+                        height: 36px;
+                        margin: 5px 0 25px; 
+                        font-size: 1em;
+                        color:#111;
+                        font-weight: bold;
+                        line-height: 1.6em;
+                        a{
+                            img{
+                                margin:0;
+                            }
+                        }
+                    }
+                    h6 a:hover img{
+                        zoom:1;opacity:0.8;
+                    }
+                    h5{
+                        margin:0 0 6px; 
+                        font-size: 14px;
+                        color:#666;
+                        font-family:'宋体';
+                        line-height: 1.6em;
+                        width: 100%;
+                    }
+                    .c999{
+                        line-height: 1.6em;
+                        a{color:#999;font-size: 14px;display: block;}
+                        a:hover{color:red;text-decoration:underline;}
+                    }
+                }
+                .last{
+                    width: 21%;
+                }
+            }
+        }
+    }
+    .row2{
+        text-align: center;padding:20px 0;font-size: 12px;color:#777;
+        span{
+            font-size: 12px;color:#777;text-align: center;
+            a{
+               color:#777;font-family:"宋体";
+            }
+        }
+        s{
+            font-size: 20px;color:#c00;
+            font-weight: 700;
+            text-decoration:none;
+        }
+        a{
+            color:#777;
+        }
+    }
+    .row3{
+        width: 50%;margin:0 auto;
+    }
+}

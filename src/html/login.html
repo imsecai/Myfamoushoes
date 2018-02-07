@@ -5,6 +5,30 @@
     <title>登录</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/login.css" />
+    <script src="../lib/jquery-3.2.1.js"></script>
+    <script>
+        jQuery(function($){
+            $('#fast_login').on('click',function(){
+                console.log(666);
+                $.ajax({
+                    url:'../api/login.php',
+                    data:{
+                        username:$('#username').val(),
+                        password:$('#password').val()
+                    },
+                    success:function(data){
+                        console.log(data);
+                        if(data === 'success'){
+                            location.href = '../index.html';
+                        }else if(data === 'fail'){
+                            $('#username').parent().addClass('has-error');
+                        }
+                    }
+                })
+                
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="shoe">
@@ -19,7 +43,7 @@
         </div>
 
         <div class="AllWrapInside">
-            <form method="post" onsubmit="return checkLogin(this)" class="loginform" id="loginform" >
+            <form class="loginform" id="loginform" >
                 <div class="RegisterWrap">
                     <div class="form">
                         <input type="hidden" />
@@ -50,31 +74,30 @@
                                                                         <tr>
                                                                             <th>用户名：</th>
                                                                             <td>
-                                                                                <input type="text" name="login"  onfocus="rmDefault(this)" onblur="nameCheck(this)"; class="x-input newinputstyle" style="color:#aaa;" id="in_login" value="邮箱/手机/用户名"/>
-                                                                               <a style="margin-left:6px;display:none;color:#aaa">立即注册</a>
+                                                                                <input type="text" name="username" class="x-input newinputstyle" style="color:#aaa;" id="username"/>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
                                                                             <th style="padding-top:15px">密　码：</th>
                                                                             <td style="padding-top:15px">
-                                                                                <input  class="x-input newinputstyle"  onfocus="hiddenError('valierror');" name="passwd" type="password" id="in_passwd">
+                                                                                <input  class="x-input newinputstyle" name="password" type="password" id="password">
                                                                             </td>
                                                                         </tr>
-                                                                        <tr id="verifyTr">
-                                                                            <th style="padding-top:15px">验证码：</th> 
-                                                                            <td style="padding-top:15px">
-                                                                                <input class="x-input " onblur="validate('yzm')" size="8" type="text" name="loginverifycode"  id="iptlogin"> 
-                                                                                <span id="verifyCode" style="width: 35px;height:22px;">
-                                                                                </span>
-                                                                                <a href="">换个图片</a>  
-                                                                            </td> 
-                                                                        </tr>
+                                                                            <!-- <tr id="verifyTr">
+                                                                                <th style="padding-top:15px">验证码：</th> 
+                                                                                <td style="padding-top:15px">
+                                                                                    <input class="x-input " onblur="validate('yzm')" size="8" type="text" name="loginverifycode"  id="iptlogin"> 
+                                                                                    <span id="verifyCode" style="width: 35px;height:22px;">
+                                                                                    </span>
+                                                                                    <a href="">换个图片</a>  
+                                                                                </td> 
+                                                                            </tr> -->
                                                                         <tr> 
                                                                             <th></th>
                                                                             <td style="padding-top:20px">
-                                                                                <input class="actbtn cart-btn-next05" type="submit" value="登录" id="fast_login" style="display:inline">
-                                                                                <a style="margin-left:10px;vertical-align:bottom" href="#" id="fast_login_fogot" class="c777">忘记密码？</a> 
-                                                                                <input type="hidden" name="forward" value=""> 
+                                                                                <input class="actbtn cart-btn-next05" type="button" value="登录" id="fast_login" style="display:inline">
+                                                                                <!-- <a style="margin-left:10px;vertical-align:bottom" href="#" id="fast_login_fogot" class="c777">忘记密码？</a> 
+                                                                                <input type="hidden" name="forward" value="">  -->
                                                                             </td> 
                                                                         </tr>
                                                                         <tr> 

@@ -97,6 +97,18 @@ a{
         }
     } 
 }
+#vcode {
+  display: inline-block;
+  width:60px;
+  height:20px;
+  line-height:20px;
+  margin-left: 5px;
+  background: #ccc;
+  vertical-align: middle;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+}
 .c777{
     label{
         font-size: 14px;

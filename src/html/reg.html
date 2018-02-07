@@ -5,6 +5,9 @@
     <title>用户注册</title>
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/reg.css" />
+    <!-- <script src="../js/reg.js"></script> -->
+    <script src="../js/require.js" data-main="../js/reg"></script>
+
 </head>
 <body>
     <div class="shoe">
@@ -22,7 +25,7 @@
                 <a href="../index.html">返回首页</a>
             </div>
         </div>
-        <form action="post" action="" id="signupform" class="signupform">
+        <form id="signupform" class="signupform">
             <div class="RegisterWrap">
                 <div class="form">
                     <h3>名鞋库注册</h3>
@@ -37,27 +40,27 @@
                                                 
                                                 <tr>
                                                     <th>用户名：</th>
-                                                    <td><input type="text" class="x-input" name="uname" id="reg_user" maxlength="50"
-                                                    placeholder="邮箱/手机" onfocus="rmDefault(this)" onblur="nameCheck(this)"; style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa"/>
+                                                    <td><input type="text" class="x-input" name="username" id="username"  style="width:220px;border:1px solid #ccc;padding:3px 5px;color:#aaa"/>
                                                     <span></span>
                                                     </td>
                                                     
                                                 </tr>
                                                 <tr>
                                                     <th style="padding-top:15px">密码：</th>
-                                                    <td style="padding-top:15px"><input type="text" class="x-input" onblur="verifyPasswd('reg_passwd')" name="passwd" type="password"  id="reg_password" style="width:220px;border:1px solid #ccc;padding:3px 5px"/></td>
+                                                    <td style="padding-top:15px"><input type="password" class="x-input"  name="password" type="password"  id="password" style="width:220px;border:1px solid #ccc;padding:3px 5px"/></td>
                                                     <span passwd_err_msg></span>
                                                 </tr>
                                                 <tr>
                                                     <th style="padding-top:15px">确认密码：</th>
-                                                    <td style="padding-top:15px"><input type="text" class="x-input" name="passwd_r" type="password" id="reg_password_r"  onfocus="hiddenError('valierror');" onblur="verifyPasswdr('reg_passwd', 'reg_passwd_r')"; style="width: 220px;border:1px solid #ccc;padding:3px 5px;"/></td>
+                                                    <td style="padding-top:15px"><input type="password" class="x-input" name="password2" type="password" id="password2"  style="width: 220px;border:1px solid #ccc;padding:3px 5px;"/></td>
                                                     <span></span>
                                                 </tr>
                                                 <tr>
                                                     <th style="padding-top:15px">验证码：</th>
                                                     <td style="padding-top:15px">
-                                                        <input autocomplete="off" class="x-input " style="width:65px;border:1px solid #ccc;padding:3px 5px;" size="8" type="text" required="true" name="signupverifycode" onblur="validate('yzm')" id="iptsingup" vtype="digits">
-                                                        <span id="verifyCode" style="width:35px;height:20px"></span><a href="javascript:void(0)" style="color:#666;font-size:12px">换个图片</a> 
+                                                        <input autocomplete="off" class="x-input " style="width:65px;border:1px solid #ccc;padding:3px 5px;" size="8" type="text" id="code">
+                                                        <span id="vcode"></span>
+                                                        <!-- <a href="javascript:void(0)" style="color:#666;font-size:12px">换个图片</a>  -->
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -77,7 +80,7 @@
                                                 <tr>
                                                     <th></th>
                                                     <td style="padding-top:10px">
-                                                        <input class="actbtn" type="submit" class="actbtn" onclick="return verfiySignupForm()"; value="注册新用户"/>
+                                                        <input class="actbtn" type="button" value="注册新用户"/>
                                                     </td>
                                                 </tr>
                                             </tbody>

@@ -13,6 +13,7 @@
     </style>
     <script src="../lib/jquery-3.2.1.js"></script>
     <script src="../lib/jquery.gdsZoom/jquery.gdsZoom.js"></script>
+    <script src="../js/require.js" data-main="../js/detail"></script>
     <script>
         jQuery(function($){
             $('.goods').gdsZoom({
@@ -40,13 +41,6 @@
                     您当前的位置： 
                     <span>名鞋库</span>
                     <span>>></span>
-                    <span>运动配件</span>
-                    <span>>></span>
-                    <span>单肩包</span>
-                    <span>>></span>
-                    <span>阿迪达斯</span>
-                    <span>>></span>
-                    <span>阿迪达斯配件</span>
                     <span class="goodsname"></span>
                 </div>
             </div>
@@ -54,10 +48,10 @@
         <div class="goods-viewer">
             <div class="goods_left">
                 <div class="goods">
-                    <img src="../img/detail1.jpg" data-big="../img/detail1.jpg">
+                    <img id="goodsimg" style="width:100%" src="">
                 </div>
                 <div class="smallList">
-                    <img src="../img/detail1.jpg" data-big="../img/detail1.jpg">
+                    <img id="goodsimg" src="../img/detail1.jpg">
                     <img src="../img/detail2.jpg" alt="">
                     <img src="../img/detail3.jpg" alt="">
                     <img src="../img/detail4.jpg" alt="">
@@ -67,9 +61,9 @@
             <div class="goods_right">
                 <div class="goodnamewarp clfix">
                     <span class="morebrand">更多
-                        <a href="//www.s.cn/adidas-brand.html" id="pro_view_more">阿迪达斯</a>
+                        <a href="goodslist.html" id="pro_view_more"></a>
                     </span>
-                    <h1 class="goodsname">adidas阿迪达斯男子板鞋2017新款透气耐磨休闲运动鞋BB9673</h1>
+                    <h1 class="goodsname"></h1>
                     <div class="sp"></div>
                 </div>
                 <ul class="goods-price list">  
@@ -78,9 +72,8 @@
                         <del class="mktprice price_com">￥469.00 </del>  
                     </li>  
                     <li> 
-                        <span>销&nbsp;&nbsp;售&nbsp;&nbsp;价：  </span>  
-                        <span class="price1 salePrice_big"> ￥289.00</span>  &nbsp;&nbsp;(&nbsp;6.2折&nbsp;)&nbsp;&nbsp; 
-                        <span class="discount price_com">立省： ￥180.00 </span> 
+                        <span>销&nbsp;&nbsp;售&nbsp;&nbsp;价： </span>  
+                        <span class="price salePrice_big"></span>
                     </li>  
                     <li>好&nbsp;&nbsp;评&nbsp;&nbsp;度：&nbsp;&nbsp;
                         <span class="comCountBar">
@@ -126,14 +119,14 @@
                     <span id="goods_ck_info" style="width:200px">
                     <span class="spec-tip">您将购买
                     <span class="c_cm"></span>
-                    <span class="buynums">1</span>件&nbsp;&nbsp;学院藏青蓝+亮白</span></span> 
+                    <span class="buynums">1</span>件&nbsp;&nbsp;<p class="goodname">学院藏青蓝+亮白</p></span></span> 
                     <div class="btnsBox" style="width:315px;right:5px">  
-                        <input onclick="gaAddToCart('加入购物车');" class="actbtn btn-buy cart_login " value="" type="submit" name="inCart03" >  
-                        <input onclick="ga('send','event', '购物流程', '立即购买', '//www.s.cn/adidas-BB9673.html');" class="actbtn btn-fastbuy " value="" type="button"  style="visibility: visible; cursor: pointer;">
+                        <input  class="actbtn btn-buy cart_login " type="button">  
+                        <input  class="actbtn btn-fastbuy " type="button"  style="visibility: visible; cursor: pointer;">
                     </div>
                 </div>
                 <div class="sp"></div>
-                <div class="baozheng"><i>名鞋库保障：</i>&nbsp;<img src="//images.s.cn/statics/zheng.png">&nbsp;正品认证&nbsp;&nbsp;&nbsp;&nbsp;<img src="//images.s.cn/statics/tui.png">&nbsp;自由退货&nbsp;&nbsp;&nbsp;&nbsp;<img src="//images.s.cn/statics/mian.png">&nbsp;全场满399免邮</div>
+                <div class="baozheng"><i>名鞋库保障：</i>&nbsp;<img src="../img/zheng.png">&nbsp;正品认证&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/tui.png">&nbsp;自由退货&nbsp;&nbsp;&nbsp;&nbsp;<img src="../img/mian.png">&nbsp;全场满399免邮</div>
             </div>
         </div>
     </div>

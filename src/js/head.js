@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded',function(){
     var cat_zuqiu = document.querySelector("#cat_zuqiu");
     var cat_baobao = document.querySelector("#cat_baobao");
 
-    // lf_cat.onmouseenter = function(){
-    //     category.style.display = 'block';
-    // }
+    lf_cat.onmouseenter = function(){
+        category.style.display = 'block';
+    }
 
     category.onmouseleave = function(){
         category.style.display = 'none';

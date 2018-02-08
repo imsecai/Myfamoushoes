@@ -423,14 +423,16 @@ body {
   border-top: 1px dotted #ccc;
   margin-top: 10px;
   padding-top: 10px;
-  height: 20px;
+  height: 40px;
+  text-align: center;
 }
 
 .page_l span {
   display: inline-block;
   margin: 5px;
   width: 40px;
-  line-height: 1.8;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
   background-color: #dfdfdf;
   color: #666;

@@ -51,6 +51,17 @@
   height: 32px;
   line-height: 32px;
   margin-bottom: -4px;
+  position: relative;
+}
+
+#scn_pro .goods-viewer .goods_right .goodnamewarp .che {
+  display: block;
+  width: 80px;
+  height: 34px;
+  background-color: pink;
+  position: absolute;
+  top: -127px;
+  right: 0px;
 }
 
 #scn_pro .goods-viewer .goods_right .goodnamewarp .morebrand {

@@ -45,6 +45,16 @@
                 height:32px;
                 line-height:32px;
                 margin-bottom: -4px;
+                position:relative;
+                .che{
+                    display:block;
+                    width:80px;
+                    height:34px;
+                    background-color:pink;
+                    position:absolute;
+                    top:-127px;
+                    right:0px;
+                }
                 .morebrand{
                     font-size: 12px;
                     font-weight: normal;
